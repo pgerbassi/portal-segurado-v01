@@ -432,7 +432,9 @@ export function PaymentSlips({ paymentSlips, cars, selectedCar, onSelectCar }: P
           <span className="font-medium">Filtros</span>
           {statistics.activeFiltersCount > 0 && (
             <Badge variant="secondary" className="ml-2 h-5 w-5 p-0 text-xs font-bold bg-[#f58634] text-white">
-              {statistics.activeFiltersCount}
+              <span className="ml-[0.3rem]">
+                {statistics.activeFiltersCount}
+              </span>
             </Badge>
           )}
         </Button>
@@ -535,7 +537,9 @@ export function PaymentSlips({ paymentSlips, cars, selectedCar, onSelectCar }: P
                     <span className="font-medium">Filtros Avançados</span>
                     {statistics.activeFiltersCount > 0 && (
                       <Badge variant="secondary" className="ml-3 h-6 w-6 p-0 text-xs font-bold bg-[#f58634] text-white">
-                        {statistics.activeFiltersCount}
+                        <span className="ml-[0.45rem]">
+                          {statistics.activeFiltersCount}
+                        </span>
                       </Badge>
                     )}
                   </Button>

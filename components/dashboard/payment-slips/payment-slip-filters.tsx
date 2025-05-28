@@ -159,11 +159,11 @@ export function PaymentSlipFilters({
                       <SelectValue placeholder="Todas as marcas" />
                     </SelectTrigger>
                     <SelectContent className="rounded-2xl border-2">
-                      <SelectItem value="all" className="rounded-xl p-3">
+                      <SelectItem value="all" className="rounded-xl p-3 pl-8">
                         Todas as marcas
                       </SelectItem>
                       {filterOptions.makes.map((make) => (
-                        <SelectItem key={make} value={make} className="rounded-xl p-3">
+                        <SelectItem key={make} value={make} className="rounded-xl p-3 pl-8">
                           {make}
                         </SelectItem>
                       ))}
@@ -180,11 +180,11 @@ export function PaymentSlipFilters({
                       <SelectValue placeholder="Todos os modelos" />
                     </SelectTrigger>
                     <SelectContent className="rounded-2xl border-2">
-                      <SelectItem value="all" className="rounded-xl p-3">
+                      <SelectItem value="all" className="rounded-xl p-3 pl-8">
                         Todos os modelos
                       </SelectItem>
                       {filterOptions.models.map((model) => (
-                        <SelectItem key={model} value={model} className="rounded-xl p-3">
+                        <SelectItem key={model} value={model} className="rounded-xl p-3 pl-8">
                           {model}
                         </SelectItem>
                       ))}
@@ -201,11 +201,11 @@ export function PaymentSlipFilters({
                       <SelectValue placeholder="Todos os anos" />
                     </SelectTrigger>
                     <SelectContent className="rounded-2xl border-2">
-                      <SelectItem value="all" className="rounded-xl p-3">
+                      <SelectItem value="all" className="rounded-xl p-3 pl-8">
                         Todos os anos
                       </SelectItem>
                       {filterOptions.years.map((year) => (
-                        <SelectItem key={year} value={year} className="rounded-xl p-3">
+                        <SelectItem key={year} value={year} className="rounded-xl p-3 pl-8">
                           {year}
                         </SelectItem>
                       ))}
@@ -222,11 +222,11 @@ export function PaymentSlipFilters({
                       <SelectValue placeholder="Todos os status" />
                     </SelectTrigger>
                     <SelectContent className="rounded-2xl border-2">
-                      <SelectItem value="all" className="rounded-xl p-3">
+                      <SelectItem value="all" className="rounded-xl p-3 pl-8">
                         Todos os status
                       </SelectItem>
                       {filterOptions.statuses.map((status) => (
-                        <SelectItem key={status} value={status} className="rounded-xl p-3">
+                        <SelectItem key={status} value={status} className="rounded-xl p-3 pl-8">
                           {status}
                         </SelectItem>
                       ))}
@@ -314,22 +314,22 @@ export function PaymentSlipFilters({
                     <SelectValue placeholder="Ordenar por" />
                   </SelectTrigger>
                   <SelectContent className="rounded-2xl border-2">
-                    <SelectItem value="date-desc" className="rounded-xl p-3">
+                    <SelectItem value="date-desc" className="rounded-xl p-3 pl-8">
                       Data (mais recente)
                     </SelectItem>
-                    <SelectItem value="date-asc" className="rounded-xl p-3">
+                    <SelectItem value="date-asc" className="rounded-xl p-3 pl-8">
                       Data (mais antigo)
                     </SelectItem>
-                    <SelectItem value="amount-desc" className="rounded-xl p-3">
+                    <SelectItem value="amount-desc" className="rounded-xl p-3 pl-8">
                       Valor (maior)
                     </SelectItem>
-                    <SelectItem value="amount-asc" className="rounded-xl p-3">
+                    <SelectItem value="amount-asc" className="rounded-xl p-3 pl-8">
                       Valor (menor)
                     </SelectItem>
-                    <SelectItem value="period-desc" className="rounded-xl p-3">
+                    <SelectItem value="period-desc" className="rounded-xl p-3 pl-8">
                       Período (Z-A)
                     </SelectItem>
-                    <SelectItem value="period-asc" className="rounded-xl p-3">
+                    <SelectItem value="period-asc" className="rounded-xl p-3 pl-8">
                       Período (A-Z)
                     </SelectItem>
                   </SelectContent>
