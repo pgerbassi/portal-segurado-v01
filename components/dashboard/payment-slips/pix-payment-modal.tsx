@@ -49,7 +49,7 @@ export function PIXPaymentModal({ slip, open, onOpenChange }: PIXPaymentModalPro
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-lg mx-4 max-h-[90vh] overflow-y-auto rounded-3xl border-2">
+      <DialogContent className="sm:max-w-[90w] mx-0 max-h-[90vh] overflow-y-auto rounded-3xl border-2">
         <DialogHeader className="pb-6">
           <DialogTitle className="flex items-center text-[#010059] text-2xl font-bold">
             <div className="bg-[#010059]/10 p-3 rounded-2xl mr-4">
