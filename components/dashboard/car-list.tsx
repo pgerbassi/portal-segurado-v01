@@ -6,8 +6,9 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import type { Car as CarType } from "@/types"
-import { Car, ChevronDown, ChevronUp, Filter } from "lucide-react"
+import { ChevronDown, ChevronUp, Filter } from "lucide-react"
 import { useState } from "react"
+import { Car } from "../icons/Car"
 
 interface CarListProps {
   cars: CarType[]

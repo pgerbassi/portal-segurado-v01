@@ -9,19 +9,19 @@ import { useMobile } from "@/hooks/use-mobile"
 import { usePaymentSlips } from "@/hooks/use-payment-slips"
 import type { CarType, PaymentSlip, TabType } from "@/types"
 import {
-    AlertTriangle,
-    CheckCircle,
-    ChevronDown,
-    ChevronUp,
-    Clock,
-    Download,
-    Eye,
-    EyeOff,
-    FileText,
-    Filter,
-    HelpCircle,
-    Search,
-    X,
+  AlertTriangle,
+  CheckCircle,
+  ChevronDown,
+  ChevronUp,
+  Clock,
+  Download,
+  Eye,
+  EyeOff,
+  FileText,
+  Filter,
+  HelpCircle,
+  Search,
+  X,
 } from "lucide-react"
 import { useEffect, useState } from "react"
 import { CarGroup } from "./payment-slips/car-group"
@@ -375,7 +375,7 @@ export function PaymentSlips({ paymentSlips, cars, selectedCar, onSelectCar }: P
 
   // Mobile Expanded Header Component
   const MobileExpandedHeader = () => (
-    <CardHeader className="p-6 bg-gradient-to-r from-gray-50 to-blue-50 border-b">
+    <CardHeader className="p-6 bg-white border-b">{/* bg-gradient-to-r from-gray-50 to-blue-50 border-b */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
           <div className="bg-[#010059]/10 p-3 rounded-2xl">
@@ -480,7 +480,7 @@ export function PaymentSlips({ paymentSlips, cars, selectedCar, onSelectCar }: P
           {isMobile ? (
             <MobileExpandedHeader />
           ) : (
-            <CardHeader className="p-6 sm:p-8 bg-gradient-to-r from-gray-50 to-blue-50">
+            <CardHeader className="p-6 sm:p-8 bg-gray-50">{/*bg-gradient-to-r from-gray-50 to-blue-50*/}
               <div className="space-y-6">
                 {/* Desktop Header Section */}
                 <div className="text-center sm:text-left">
@@ -628,7 +628,7 @@ export function PaymentSlips({ paymentSlips, cars, selectedCar, onSelectCar }: P
 
               <div className="p-4 sm:p-6">
                 {/* Status Summary - Mobile optimized */}
-                <div className="mb-6 p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl border-2 border-gray-100">
+                <div className="mb-6 p-4 bg-blue-50 rounded-2xl border-2 border-gray-100">{/* bg-gradient-to-r from-gray-50 to-blue-50 */}
                   <div className="text-sm font-semibold text-gray-700 mb-4 text-center">
                     Resumo dos boletos:
                   </div>

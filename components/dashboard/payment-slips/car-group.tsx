@@ -1,11 +1,13 @@
 "use client"
 
+import { Car } from "@/components/icons/Car"
 import { Badge } from "@/components/ui/badge"
 import type { CarType, PaymentSlip } from "@/types"
-import { AlertTriangle, Car, CheckCircle, ChevronDown, Clock } from "lucide-react"
+import { AlertTriangle, CheckCircle, ChevronDown, Clock } from "lucide-react"
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useState } from "react"
 import { PaymentSlipCard } from "./payment-slip-card"
 import { PaymentSlipPagination } from "./payment-slip-pagination"
+
 
 interface CarGroupData {
   car: CarType

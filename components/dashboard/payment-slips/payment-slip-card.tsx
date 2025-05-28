@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import type { PaymentSlip } from "@/types"
 import {
-    AlertTriangle,
-    CheckCircle,
-    Clock,
-    CreditCard,
-    Download,
-    FileText,
-    Loader2,
-    MoreVertical,
-    Share2,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Download,
+  FileText,
+  Loader2,
+  MoreVertical,
+  Share2
 } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react"
 import { PIXPaymentModal } from "./pix-payment-modal"
 
@@ -182,7 +182,14 @@ export function PaymentSlipCard({ slip, isSelected, onSelect, isDownloading, onD
                 className="flex-1 h-14 border-2 border-[#010059] text-[#010059] hover:bg-[#010059]/5 rounded-2xl text-base font-semibold shadow-sm hover:shadow-md transition-all duration-200"
                 onClick={handlePixClick}
               >
-                <CreditCard className="h-5 w-5 mr-3" />
+                {/*<CreditCard className="h-5 w-5 mr-3" />*/}
+                <Image
+                  src="logo-pix.png"
+                  alt="Credit Card Icon"
+                  width={18}
+                  height={18}
+                  className="mr-2"
+                />
                 Pagar com PIX
               </Button>
             ) : (
