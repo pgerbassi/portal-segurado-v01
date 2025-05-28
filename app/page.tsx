@@ -36,7 +36,7 @@ export default function LoginPage() {
             </div>
           </div>
           <h1 className="text-2xl font-bold text-[#010059]">Portal do Segurado</h1>
-          <p className="text-gray-600">Acesse seus boletos de pagamento</p>
+          <p className="text-gray-600">Seu seguro em dia, sem complicações.</p>
         </div>
 
         <Card className="border-0 shadow-lg rounded-xl">

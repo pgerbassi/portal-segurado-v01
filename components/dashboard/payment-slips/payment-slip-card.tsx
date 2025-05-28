@@ -103,8 +103,8 @@ export function PaymentSlipCard({ slip, isSelected, onSelect, isDownloading, onD
     >
       {/* Recent indicator */}
       {isRecent && (
-        <div className="absolute top-4 right-4">
-          <Badge variant="outline" className="bg-blue-50 text-blue-700 text-xs border-blue-200 px-3 py-1 font-medium">
+        <div className="absolute -top-3 right-1">
+          <Badge variant="outline" className="bg-blue-50 text-blue-700 text-[0.5rem] border-blue-200 px-3 py-1 font-medium">
             Recente
           </Badge>
         </div>
